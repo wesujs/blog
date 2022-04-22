@@ -1,0 +1,22 @@
+<%- include('partials/header') %>
+
+
+    <h1 class="compose-title">New Message</h1>
+    <div class="container-fluid">
+    <form action="/compose" method="post">
+        <div class="form-group">
+            <label for="">Title</label>
+            <input type="text" name="postTitle" class="form-control">
+            <label for="">Content</label>
+            <textarea name="postContent" id="" cols="30" rows="4" class="form-control"></textarea>
+        </div>
+        <div class="d-grid gap-2">
+            <button class="btn btn-warning" type="submit" name="button">Submit</button>
+        </div>
+
+    </form>
+</div>
+
+
+
+<%- include('partials/footer') %>
